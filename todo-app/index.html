@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo App</title>
+    <link href="/styles/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1 class="header__title">Todo app</h1>
+            <h2 class="header__subtitle">What do you need to do?</h2>
+        </div>
+    </div>
+
+    <div class="actions">
+        <div class="actions__container">
+            <input type="text" id="search-text" class="input" placeholder="filter todos">
+            <label>
+                <input id="hide-completed" type="checkbox" class="checkbox"> Hide completed
+            </label>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="summary"></div>
+        <div id="todos"></div>
+        <form id="new-todo">
+            <input type="text" placeholder="Enter something to do" name="newTodo" class="input">
+            <button class="button">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment-with-locales.min.js" integrity="sha512-EATaemfsDRVs6gs1pHbvhc6+rKFGv8+w4Wnxk4LmkC0fzdVoyWb+Xtexfrszd1YuUMBEhucNuorkf8LpFBhj6w==" crossorigin="anonymous"></script>
+    <script src="scripts/todo-functions.js"></script>
+    <script src="scripts/todo-app.js"></script>
+</body>
+</html>
